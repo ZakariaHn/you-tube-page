@@ -1,0 +1,55 @@
+.sidenav {
+  height: 100%;
+  width: 15%;
+}
+
+#sideTop div:hover,
+#sideMid div:hover {
+  background-color: rgb(220 220 220);
+  cursor: grabbing;
+}
+
+.sidenav i {
+  margin-top: 1rem;
+}
+
+#sideTop div *,
+#sideMid div * {
+  margin-left: 1.8rem;
+}
+
+#sideTop div,
+#sideMid div {
+  display: flex;
+  flex-flow: row;
+}
+
+.home {
+  background-color: rgb(220 220 220);
+}
+
+.fa-home {
+  color: red;
+}
+
+.side-line {
+  width: 15%;
+  height: 0.06rem;
+  position: absolute;
+  background-color: #cccccc;
+  margin: 0;
+}
+
+.sections.sidenav p {
+  font-size: medium;
+}
+
+.trending,
+.more {
+  margin-left: 0.18rem;
+}
+
+.subscriptions {
+  margin: 1.9rem 0 0 1.25rem;
+  color: #606060;
+}

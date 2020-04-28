@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html style="font-family: Arial, Helvetica, sans-serif;" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"/>
+      <link rel="stylesheet" href="./styles/main.css" />
+    <title>Youtube</title>
+  </head>
+  <body id="mode">
+    <!-- Header -->
+    <nav class="header">
+      <div class="left-header">
+        <i class="fas fa-bars"></i>
+        <i class="fab fa-youtube"></i>
+        <h5>YouTube<span>DE</span></h5>
+      </div>
+      <div class="mid-header">
+        <input id="input" type="text" placeholder="Search" />
+        <div class="search-button"><i class="fas fa-search"></i></div>
+      </div>
+      <div class="right-header">
+        <i class="fas fa-video"></i>
+        <i class="fas fa-th"></i>
+        <i class="fas fa-bell"></i>
+       
+        <img class="profile" src="./img/profile.jpg">
+      </div>
+    </nav>
+    <!-- side-nav, top navigation bar and video-card -->
+    <div class="sections">
+      <!-- left side-nav -->
+      <section class="sidenav">
+        <div id="sideTop">
+          <div class="home">
+            <i class="fas fa-home"></i>
+            <p>Home</p>
+          </div>
+          <div class="trending">
+            <i class="fas fa-fire"></i>
+            <p>Trending</p>
+          </div>
+          <div class="subscription">
+            <i class="fas fa-circle"></i>
+            <p>Subscriptions</p>
+          </div>
+          <div class="side-line"></div>
+        </div>
+        <div id="sideMid">
+          <div class="library">
+            <i class="fas fa-book-open"></i>
+            <p>Library</p>
+          </div>
+          <div class="history">
+            <i class="fas fa-history"></i>
+            <p>History</p>
+          </div>
+          <div class="later">
+            <i class="fas fa-clock"></i>
+            <p>Watch Later</p>
+          </div>
+          <div class="liked">
+            <i class="fas fa-heart"></i>
+            <p>Liked videos</p>
+          </div>
+          <div class="more">
+            <i class="fas fa-angle-down"></i>
+            <p>Show more</p>
+          </div>
+          <div class="side-line"></div>
+        </div>
+        <div class="subscriptions">
+          <h4>Subscriptions</h4>
+        </div>
+      </section>
+      <section id="mainLayout" >
+       <!-- top navigation bar -->
+         <div id="navBar">
+           <div><h4>HOME</h4></div>
+           <div><h4>VIDEOS</h4></div>
+           <div><h4>PLAYLIST</h4></div>
+           <div><h4>COMMUNITY</h4></div>
+           <div><h4>CHANNELS</h4></div>
+           <div><h4>ABOUT</h4></div>
+           <div><i class="fas fa-search ddd"></i></div>
+           <div class="container">
+            <input  type="checkbox" id="checkBox" onclick="change()"/>
+            <script>
+              const change = () => {
+                if (checkBox.checked ==1){
+              
+               navBar.classList.add("dark");
+               videosGrid.classList.add("dark"); 
+               mode.classList.add("dark");
+               }else{
+               
+               navBar.classList.remove("dark");
+               videosGrid.classList.remove("dark"); 
+               mode.classList.remove("dark");
+               }
+             };
+               </script>
+          </div>
+         </div>
+         
+        <section class="videos-channels-sec">
+          <!-- video Card -->
+          <div id="videosGrid">
+            <div class="recommended">
+              <h4>Recommended &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-caret-right"></i> &nbsp;<h5>PLAY ALL</h5></h4>
+            </div> 
+            <!-- first row video card -->
+            <div class="first videos-row">
+              <div class="video-card">
+                <img src="./img/guitar-1245856_960_720.jpg" />
+                <div class="time long">01:45:25</div>
+                <div class="line-gray">
+                  <div class="line-red-compleat"></div>
+                </div>
+                <div class="video-data">
+                  <img  src="./img/logo1.webp">
+                  <h4>Jack White - LIVE Full Concert 2017</h4>
+                  <P>136k views - 2 weeks ago</P>
+              </div>
+              </div>
+              <div class="video-card">
+                <img src="./img/sleep-deep.webp" />
+                <div class="time">12:15</div>  
+                <div class="line-gray">
+                  <div class="line-red75"></div>
+                </div>
+                <div class="video-data">
+                  <img  src="./img/logo2.webp"> 
+                  <h4>Tips for Better Sleep | UPMC HealthBeat</h4>
+                  <P>1.2M views - 1 year ago</P>          
+                </div>           
+              </div>
+              <div class="video-card">
+                <img src="./img/javascript.webp" />
+                <div class="mix">
+                  <h2>50+</h2>
+                </div>
+                <div class="video-data">
+                  <img  src="./img/logo3.webp">
+                  <h4>Learn JavaScript - Full Course for Beginners</h4>
+                <P>FreeCodeCamp.org  2.8M views 1 year ago</P>  
+              </div> 
+              </div>
+              <div class="video-card">
+                <img src="./img/our-planet.webp" />
+                <div class="time">06:12</div>
+                <div class="line-gray">
+                  <div class="line-red75"></div>
+                </div>
+                <div class="video-data">
+                  <img src="./img/logo4.jpg">
+                  <h4>Our Planet | Official Trailer [HD] | Netflix</h4>
+                <P>Netflix 1.2M views - 11 months ago</P>  
+                </div> 
+              </div>
+            </div>
+            <div class="mid-line"></div>
+            <!-- second row video card -->
+            <div class="upload">
+              <h4>Uploads &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-caret-right"></i>  &nbsp;<h5>PLAY ALL</h5></h4>
+            </div>
+            <div class="second videos-row">
+              <div class="video-card">
+                <img src="./img/breaking-news.webp" />
+                <div class="mix">
+                  <h2>50+</h2>
+                </div>
+                <div class="video-data">
+                  <img src="./img/logo5.jpeg">
+                  <h4>BBC | Breaking News</h4>
+                  <P>BBC 265K views - 1 year ago</P>   
+                </div>
+               </div>
+              <div class="video-card">
+                <img src="./img/corona.webp" />
+                <div class="time">10:44</div>
+                <div class="line-gray"></div>
+                <div class="video-data">
+                  <img src="./img/logo6.webp">
+                  <h4>Coronavirus in Deutschland: Grund zur Panik? | Gesundheit | BR | Corona</h4>
+                  <P>1.2M views - 11 months ago</P> 
+                </div>  
+              </div>
+              <div class="video-card">
+                <img src="./img/snarky-puppy.jpg" />
+                <div class="time">20:00</div>
+                <div class="line-gray">
+                  <div class="line-red25"></div>
+                </div>
+                <div class="video-data">
+                  <img src="./img/logo7.webp">
+                  <h4>Snarky Puppy: NPR Music Tiny Desk Concera</h4>
+                  <P>NPR Music 1.1M views 3 months ago</P>  
+                </div> 
+              </div>
+              <div class="video-card">
+                <img src="./img/kasmo.webp" />
+                <div class="time">29:44</div>
+                <div class="line-gray"></div>
+                   <div class="video-data">
+                    <img  src="./img/logo8.webp">
+                    <h4 class="arabic">نصف ساعة من الضحك المتواصل مع كسمو ـ المجموعة الثانية</h4>
+                   <P>1.2M views - 11 months ago</P> 
+                  </div>
+              </div>
+          </div>
+        </div>
+      
+  </body>
+</html>
